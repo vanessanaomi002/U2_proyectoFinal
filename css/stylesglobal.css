@@ -1,0 +1,223 @@
+
+@font-face {
+    font-family: 'Syne';
+    src: url(../fonts/Syne-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Tilt';
+    src: url(../fonts/TiltWarp-Regular-VariableFont_XROT\,YROT.ttf);
+}
+@font-face {
+    font-family: 'Work';
+    src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-weight: normal;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+.main-header {
+    max-width: 1351px;
+    height: 100px;
+    background-color: #0B090A;
+    top: 0;
+    position: sticky;
+
+    z-index: 1000; /* Ensure the header is above other content */
+}
+
+.main-header nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+
+.logo {
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    background-color: #F5F3F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    transition: transform 0.3s ease;
+}
+
+.logo img {
+    width: 51px;
+    height: 51px;
+    object-fit: contain;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+.logo:active {
+    transform: scale(0.9);
+}
+.navbar {
+    display: flex;
+    position: relative;
+    top: 0px;
+    font-family: 'Syne';
+}
+.navbar li {
+    list-style: none;
+    position: relative;
+    width: 165px;
+}
+
+.navbar li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+.navbar li a:hover {
+    transform: scale(1.05); 
+    background-color: white;
+    color: black;
+}
+.navbar li a:active {
+    transform: scale(0.95);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    background-color: #000000;
+    z-index: 1000; 
+}
+
+.dropdown-menu li a {
+    text-align: center;
+    padding: 15px 10px; 
+    font-size: 12px;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.main-footer{
+    width: 1360px;
+    background-color: #660708;
+    margin-top: 40px;
+    padding: 100px 0;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-links{
+    width: 16%;
+    padding: 0 10px;
+    font-size: 14px;
+    font-family: 'Syne';
+    text-align: center;
+}
+.footer-links h4 a {
+    display: block;
+    width: 100%;
+    color: #B1A7A6;
+    background: none;
+    font-family: 'Syne';
+    margin: 0 0 10px 0;
+    padding: 20px 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 2px solid #B1A7A6;
+    margin-top: 10px;
+}
+.footer-links ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #B1A7A6;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    padding: 15px 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.footer-links ul li a:hover {
+    transform: scale(1.1);
+    color: #FFFFFF;
+}
+.footer-links ul li a:active {
+    transform: scale(0.9);
+}
+.footer-links h4 a:hover {
+    transform: scale(1.1);
+    color: #FFFFFF;
+}
+.footer-links h4 a:active {
+    transform: scale(0.9);
+}
+.footer-derechos {
+    width: 1360px;
+    background: #0B090A;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    padding: 18px 0 12px 0;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre logo y texto */
+}
+.footer-derechos .footer-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    margin-right: 8px;
+}
+.link-conalep{
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+.link-conalep:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.link-conalep:active{
+    transform: scale(0.9);
+    text-decoration: underline;
+}

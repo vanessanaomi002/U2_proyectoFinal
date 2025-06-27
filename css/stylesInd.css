@@ -1,0 +1,917 @@
+@keyframes nav-escala{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+#navbar.nav-animate{
+    animation: nav-escala 0.5s ease;
+}
+@keyframes Int-escala{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+#secInt.Int-animate{
+    animation: nav-escala 0.7s ease;
+}
+@keyframes Filo-escala{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+#seccFilo.Filo-animate{
+    animation: nav-escala 0.7s ease;
+}
+.seccion-foto{
+    max-width: 1440px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccion-foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.contenedor-inter{
+    position: relative;
+    width: 600px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.style-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #161A1D;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+}
+.text-content{
+    position: relative;
+    color: white;
+    font-family: 'Syne';
+    text-align: center;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-content h1{
+    font-size: 64px;
+    font-family: 'Tilt'
+}
+.text-content p{
+    font-size: 36px;
+    font-family: 'Syne';
+    margin-top: -20px;
+}
+.seccion-integrantes{
+    position: relative;
+    max-width: 1440px;
+    min-height: 420px;
+    background-color: #F5F3F4;
+    margin: 0 auto;
+    scroll-margin-top: 100px;
+    padding: 20px;
+}
+.titulo-integrantes{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Syne';
+    color: #FFFFFF;
+    margin-bottom: 16px, 15px, 15px, 15px;
+    background-color: #A4161A;
+    border: none;
+    border-radius: 50px;
+    width: 264px;
+    height: 40px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.titulo-integrantes:hover{
+    transform: scale(1.1);
+    background-color: #FFFFFF;
+    color: #A4161A;
+}
+.titulo-integrantes:active{
+    transform: scale(0.9);
+}
+.contenedor-integrante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.tarjeta-integrante{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 280px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.tarjeta-integrante img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.tarjeta-integrante:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+.tarjeta-integrante:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+.info-integrante{
+    width: 210px;
+    height: 40px;
+    background-color: #B1A7A6;
+    border-radius: 50px;
+    border: none;
+    margin-top: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Syne';
+    font-size: 24px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.info-integrante:hover{
+    background-color: #161A1D;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.info-integrante:active{
+    transform: scale(0.9);
+}
+.contenedor-carrusel {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    scroll-behavior: smooth;
+}
+.carrusel-integrantes {
+    display: flex;
+    align-items: center;
+}
+
+.flecha-izquierda{
+    margin-right: 90px;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.flecha-izquierda img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+.flecha-derecha{
+    margin-left: 90px;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.flecha-derecha img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+.flecha-derecha:hover,
+.flecha-izquierda:hover {
+    transform: scale(1.1);
+    transform: translateY(-5px);
+}
+.flecha-derecha:active,
+.flecha-izquierda:active { 
+    transform: scale(0.9);
+    transform: translateY(0px);
+}
+.seccion-bienvenida{
+    position: relative;
+    max-width: 1440px;
+    min-height: 450px;
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccion-bienvenida img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    position: absolute;
+    border-radius: 20px;
+    z-index: -1;
+}
+.contenedor-texto{
+    position: absolute;
+    width: 600px;
+    height: 498px;
+    left: 120px;
+    top: -25px;
+    background: rgba(22, 26, 29, 0.6);
+    z-index: 100;
+}
+.texto-bienvenida{
+    position: relative;
+    color: white;
+    text-align: start;
+    width: 450px;
+    height: 445px;
+    z-index: 1;
+}
+.texto-bienvenida h1{
+    position: absolute;
+    width: 380px;
+    height: 70px;
+    left: 15px;
+    top: 44px;
+    font-family: 'Tilt';
+    font-size: 64px;
+}
+.texto-bienvenida p{
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    left: 15px;
+    top: 120px;
+    font-family: 'Syne';
+    font-size: 19px;
+}
+.seccion-epocas{
+    position: relative;
+    max-width: 1440px;
+    min-height: 375px;
+    background-color: #F5F3F4;
+    margin: 0 auto;
+    padding: 35px;
+    z-index: 0; 
+    scroll-margin-top: 68px;
+}
+.titulo-epocas{
+    margin-bottom: 16px, 15px, 15px, 15px;
+    background-color: #A4161A;
+    border-radius: 50px;
+    width: 264px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-epocas h1{
+    font-size: 24px;
+    font-family: 'Syne';
+    color: #FFFFFF;
+    font-weight: normal;
+}
+.carrusel-epocas {
+    display: flex;
+    align-items: center;    /* Centra verticalmente las flechas y tarjetas */
+    justify-content: center;/* Centra horizontalmente */
+    width: 100%;
+    height: 100%;
+    margin-top: 38px;
+}
+.contenedor-carrusel-epocas {
+    position: relative;
+    max-width: 1440px; /* 4 tarjetas de 150px + 3 gaps de 20px */
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden; /* Oculta la barra de scroll */
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    scroll-behavior: smooth;
+}
+.flecha-izquierda-epocas{
+    margin-right: 95px;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.flecha-izquierda-epocas img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+.flecha-derecha-epocas{
+    margin-left: 95px;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.flecha-derecha-epocas img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+.flecha-derecha-epocas:hover,
+.flecha-izquierda-epocas:hover {
+    transform: scale(1.1);
+    transform: translateY(-5px);
+}
+.flecha-derecha-epocas:active,
+.flecha-izquierda-epocas:active { 
+    transform: scale(0.9);
+    transform: translateY(0px);
+}
+.tarjeta-epocas-1 {
+    position: relative;
+    max-width: 150px;
+    flex: 0 0 150px;
+    height: 150px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/AntiguaBase2.jpeg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-epocas-1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+
+.epoca-texto {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-family: 'Work';
+    font-size: 15px;
+    text-align: center;
+    padding: 0 10px;
+}
+.tarjeta-epocas-1:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta-epocas-1:active {
+    transform: scale(0.95) translateY(0px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.tarjeta-epocas-2{
+    position: relative;
+    max-width: 150px;
+    flex: 0 0 150px;
+    height: 150px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Med5.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-epocas-2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+.tarjeta-epocas-2:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta-epocas-2:active {
+    transform: scale(0.95) translateY(0px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.tarjeta-epocas-3 {
+    position: relative;
+    max-width: 150px;
+    flex: 0 0 150px; /* No crecer, no encoger, ancho fijo */
+    height: 150px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Moderna4.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-epocas-3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+.tarjeta-epocas-3:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta-epocas-3:active {
+    transform: scale(0.95) translateY(0px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.tarjeta-epocas-4 {
+    position: relative;
+    max-width: 150px;
+    flex: 0 0 150px; /* No crecer, no encoger, ancho fijo */
+    height: 150px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Ilustrativa4.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-epocas-4::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+.tarjeta-epocas-4:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta-epocas-4:active {
+    transform: scale(0.95) translateY(0px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.tarjeta-epocas-5 {
+    position: relative;
+    max-width: 150px;
+    flex: 0 0 150px; /* No crecer, no encoger, ancho fijo */
+    height: 150px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Romantica2.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-epocas-5::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+.tarjeta-epocas-5:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta-epocas-5:active {
+    transform: scale(0.95) translateY(0px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.tarjeta-epocas-6 {
+    position: relative;
+    max-width: 150px;
+    flex: 0 0 150px; /* No crecer, no encoger, ancho fijo */
+    height: 150px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/BaseCont.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-epocas-6::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+.tarjeta-epocas-6:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta-epocas-6:active {
+    transform: scale(0.95) translateY(0px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.seccion-objetivo {
+    position: relative;
+    max-width: 1440px;
+    min-height: 450px;
+    margin-top: 25px;
+}
+.seccion-objetivo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    border-radius: 20px;
+    z-index: -1;
+}
+.contenedor-texto-objetivo{
+    position: absolute;
+    width: 600px;
+    height: 498px;
+    right: 120px; /* Igual que left en bienvenida, pero a la derecha */
+    top: -25px;
+    background: rgba(22, 26, 29, 0.6);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.texto-objetivo{
+    position: relative;
+    color: white;
+    text-align: end; /* Alinea el texto a la derecha */
+    width: 450px;
+    height: 445px;
+    z-index: 1;
+    margin-left: auto;
+}
+.texto-objetivo h1{
+    position: absolute;
+    width: 380px;
+    height: 70px;
+    right: 15px; /* Alinea el título a la derecha */
+    top: 44px;
+    font-family: 'Tilt';
+    font-size: 64px;
+    text-align: end;
+}
+.texto-objetivo p{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    right: 15px; /* Alinea el párrafo a la derecha */
+    top: 120px;
+    font-family: 'Syne';
+    font-size: 19px;
+    text-align: end;
+}
+.seccion-navegar-pagina{
+    position: relative;
+    z-index: 10;
+    max-width: 1440px;
+    min-height: 2130px;
+    margin-top: 25px;
+    background-color: #F5F3F4;
+
+}
+.contenedor-titulo-seccion{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    background: rgba(22, 26, 29, 0.6);
+    border-radius: 0 50px 50px 0;
+    left: 0;
+    top: 47px;
+    z-index: -1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.titulo-seccion{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    left: 0px;
+    font-family: 'Syne';
+    font-size: 24px;
+    margin-top: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    z-index: 10;
+} 
+.contenedor-seccionav-imagen{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-image: url(../img/ramas-de-filosofia-small-16_9.jpg);
+    background-size: 600px 600px;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 50px;
+    left: 79px;
+    top: 184px;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-contenedorimg-uno{
+    position: relative;
+    z-index: 10;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    background: rgba(22, 26, 29, 0.6);
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease;
+}
+.text-contenedorimg-uno h1{
+    font-size: 40px;
+    font-family: 'Tilt'
+}
+.text-contenedorimg-uno p{
+    font-size: 36px;
+    font-family: 'Syne';
+    margin-top: -5px;
+}
+.text-contenedorimg-uno:hover{
+    transform: scale(1.05);
+    background: rgba(22, 26, 29, 0.8);
+}
+.text-contenedorimg-uno:active{
+    transform: scale(0.95);
+    background: rgba(22, 26, 29, 0.6);
+}
+.contenedor-seccionav-texto{
+    position: absolute;
+    width: 680px;
+    height: 600px;
+    padding: 15px;
+    left: 600px;
+    top: 184px;
+    border-radius: 50px;
+    background: rgba(22, 26, 29, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-contenedortext-uno{
+    margin-left: 100px;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-family: 'Syne';
+    text-align: left;
+}
+.text-contenedortext-uno ul li{
+    margin-left: 30px;
+}
+.text-contenedorimg-dos{
+    position: relative;
+    z-index: 10;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    background: rgba(22, 26, 29, 0.6);
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease;
+}
+.text-contenedorimg-dos h1{
+    font-size: 40px;
+    font-family: 'Tilt'
+}
+.text-contenedorimg-dos p{
+    font-size: 36px;
+    font-family: 'Syne';
+    margin-top: -5px;
+}
+.text-contenedorimg-dos:hover{
+    transform: scale(1.05);
+    background: rgba(22, 26, 29, 0.8);
+}
+.text-contenedorimg-dos:active{
+    transform: scale(0.95);
+    background: rgba(22, 26, 29, 0.6);
+}
+.contenedor-seccionav-imagen-dos{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-image: url(../img/Integrantes.jpg);
+    background-size: 600px 600px;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 50px;
+    right: 79px;
+    top: 834px;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-seccionav-texto-dos{
+    position: absolute;
+    width: 680px;
+    height: 600px;
+    right: 600px;
+    top: 834px;
+    padding: 15px;
+    border-radius: 50px;
+    background: rgba(22, 26, 29, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-contenedortext-dos{
+    margin-right: 100px;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: 'Syne';
+    text-align: right;
+}
+.text-contenedortext-dos ul li {
+    direction: rtl;     /*Hace que las viñetas aparezcan de lado derecho*/
+    margin-right: 30px;
+}
+.contenedor-seccionav-imagen-tres{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-image: url(../img/Filosofos.jpg);
+    background-size: 600px 600px;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 50px;
+    left: 79px;
+    top: 1484px;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-contenedorimg-tres{
+    position: relative;
+    z-index: 10;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    background: rgba(22, 26, 29, 0.6);
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease;
+}
+.text-contenedorimg-tres h1{
+    font-size: 40px;
+    font-family: 'Tilt'
+}
+.text-contenedorimg-tres p{
+    font-size: 36px;
+    font-family: 'Syne';
+    margin-top: -5px;
+}
+.text-contenedorimg-tres:hover{
+    transform: scale(1.05);
+    background: rgba(22, 26, 29, 0.8);
+}
+.text-contenedorimg-tres:active{
+    transform: scale(0.95);
+    background: rgba(22, 26, 29, 0.6);
+}
+.contenedor-seccionav-texto-tres{
+    position: absolute;
+    width: 680px;
+    height: 600px;
+    left: 600px;
+    top: 1484px;
+    padding: 15px;
+    border-radius: 50px;
+    background: rgba(22, 26, 29, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-contenedortext-tres{
+    margin-left: 100px;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: 'Syne';
+    text-align: left;
+}

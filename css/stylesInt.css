@@ -1,0 +1,131 @@
+#Secc-Integrantes-uno,
+#Secc-Integrantes-dos,
+#Secc-Integrantes-tres,
+#Secc-Integrantes-cuatro,
+#Secc-Integrantes-cinco,
+#Secc-Integrantes-seis {
+    margin: 0 70px 30px 70px;
+    scroll-margin-top: 100px;
+}
+.contenedor-secciones-integrantes{
+    margin-top: 56px;
+    margin-bottom: 100px;
+}
+.seccionIntegrantes{
+    width: 1200px;
+    height: 555px;
+}
+.container-integrante{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #161A1D;
+    border-radius: 50px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tarjeta-info-1{
+    width: 250px;
+    height: 400px;
+    border-radius: 30px;
+    margin: 60px 0;
+    color: #161A1D;
+    padding: 10px;
+
+    background-color: rgba(245, 243, 244, 0.7);
+}
+.tarjeta-info-1 h1{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Tilt';
+    margin: 10px;
+}
+.tarjeta-info-1 p{
+    text-align: justify;
+    font-size: 14px;
+    font-family: 'Syne';
+}
+.foto-integrante{
+    width: 201px;
+    height: 244px;
+    margin-top: 156px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foto-integrante img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.name-integrante-1{
+    width: 100%;
+    height: 42px;
+    padding: 5px;
+    border-radius: 50px;
+    margin-top: 30px;
+
+    font-family: 'Syne';
+    font-size: 26px;
+    text-align: center;
+    color: #FFFFFF;
+
+    background-color: #A4161A;
+}
+.titulo-seccion-integrantes{
+    width: 345px;
+    height: 45px;
+    background-color: #A4161A;
+    color: #FFFFFF;
+    font-family: 'Syne';
+    border-radius: 0 50px 50px 0;
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-seccion-integrantes h1{
+    font-weight: normal;
+    font-size: 24px;
+}
+.Integrante-uno{
+    scroll-margin-top: 100px;
+}
+#tarjeta-info-uno p{
+    padding-top: 125px;
+    text-align: center;
+    font-size: 40px;
+}
+#tarjeta-info-dos p{
+    padding-top: 125px;
+    text-align: center;
+    font-size: 40px;
+}
+#tarjeta-info-tres p{
+    padding-top: 125px;
+    text-align: center;
+    font-size: 40px;
+}
+#tarjeta-info-cuatro p{
+    padding-top: 125px;
+    text-align: center;
+    font-size: 40px;
+}
+#tarjeta-info-cinco p{
+    padding-top: 125px;
+    text-align: center;
+    font-size: 40px;
+}
+#tarjeta-info-seis p{
+    padding-top: 125px;
+    text-align: center;
+    font-size: 40px;
+}

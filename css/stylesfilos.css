@@ -1,0 +1,598 @@
+.seccion-foto{
+    width: 1351px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccion-foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.contenedor-inter{
+    position: relative;
+    width: 500px;
+    height: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.style-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #161A1D;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+}
+.text-content{
+    position: relative;
+    color: white;
+    font-family: 'Syne';
+    text-align: center;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-content h1{
+    font-size: 64px;
+    font-family: 'Tilt'
+}
+.text-content p{
+    font-size: 36px;
+    font-family: 'Syne';
+    margin-top: -20px;
+}
+.seccion-fundador{
+    position: relative;
+    width: 1351px;
+    height: 1500px;
+    margin-top: 0;
+    background-color: #F5F3F4;
+}
+.titulo-seccion-fundador{
+    position: absolute;
+    width: 345px;
+    height: 45px;
+    background-color: #A4161A;
+    color: #FFFFFF;
+    font-family: 'Syne';
+    border-radius: 50px;
+    margin: 15px 15px 0px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-seccion-fundador h1{
+    font-weight: normal;
+    font-size: 24px;
+}
+.contenedor-seccfun-texto-uno{
+    position: absolute;
+    width: 1320px;
+    height: 258px;
+    padding: 15px;
+    background-color: #D3D3D3;
+    border-radius: 30px;
+    margin-top: 133px;
+    left: 50%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.contenedor-seccfun-texto-uno a{
+    width: 485px;
+    height: 45px;
+    background-color: #161A1D;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Syne'; 
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+.contenedor-seccfun-texto-uno a:hover{
+    background: #FFFFFF;
+    color: #161A1D;
+    transform: scale(1);
+}
+.contenedor-seccfun-texto-uno a:active{
+    transform: scale(0.8);
+}
+.contenedor-seccfun-texto-uno p{
+    text-align: justify;
+    font-family: 'Syne';
+    font-size: 18px;
+    color: #161A1D;
+}
+.contenedor-seccfun-texto-dos{
+    position: absolute;
+    width: 996px;
+    height: 474px;
+    padding: 15px;
+    background-color: #D3D3D3;
+    border-radius: 30px;
+    margin-top: 423px;
+    left: 90%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(-90%);
+}
+.contenedor-seccfun-texto-dos a{
+    width: 345px;
+    height: 45px;
+    background-color: #161A1D;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Syne'; 
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+.contenedor-seccfun-texto-dos a:hover{
+    background: #FFFFFF;
+    color: #161A1D;
+    transform: scale(1);
+}
+.contenedor-seccfun-texto-dos a:active{
+    transform: scale(0.8);
+}
+.contenedor-seccfun-texto-dos p{
+    font-family: 'Syne';
+    font-size: 18px;
+    color: #161A1D;
+    text-align: justify;
+    
+}
+.contenedor-seccfun-texto-tres{
+    position: absolute;
+    width: 1320px;
+    height: 420px;
+    padding: 15px;
+    background-color: #D3D3D3;
+    border-radius: 30px;
+    margin-top: 929px;
+    left: 50%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%);
+}
+.contenedor-seccfun-texto-tres a{
+    width: 345px;
+    height: 45px;
+    background-color: #161A1D;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    font-family: 'Syne'; 
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.contenedor-seccfun-texto-tres a:hover{
+    background: #FFFFFF;
+    color: #161A1D;
+    transform: scale(1);
+}
+.contenedor-seccfun-texto-tres a:active{
+    transform: scale(0.8);
+}
+.contenedor-seccfun-texto-tres p{
+    font-family: 'Syne';
+    font-size: 18px;
+    color: #161A1D;
+    text-align: justify
+}
+.contenedor_imagen_fundador{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.contenedor_imagen_fundador img{
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin-top: 515px;
+    left: 19px;
+
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.contenedor_imagen_fundador a{
+    position: absolute;
+    width: 245px;
+    height: 45px;
+    margin-top: 830px;
+    left: 38px;
+    background-color: #161A1D;
+    border-radius: 50px;
+    cursor: pointer;
+
+    font-family: 'Syne'; 
+    font-size: 25px;
+    font-weight: normal;
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.contenedor_imagen_fundador a:hover{
+    background: #FFFFFF;
+    color: #161A1D;
+    transform: scale(1);
+}
+.contenedor_imagen_fundador a:active{
+    transform: scale(0.8);
+}
+.seccion-base-epocantigua {
+    position: relative;
+    max-width: 1351px;
+    min-height: 450px;
+    margin: 25px 0;
+}
+#Seccion-Base-Epoc1{
+    background-image: url(../img/AntiguaBase2.jpeg);
+}
+#Seccion-Base-Epoc2{
+    background-image: url(../img/Med5.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+#Seccion-Base-Epoc3{
+    background-image: url(../img/Moderna5.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+#Seccion-Base-Epoc4{
+    background-image: url(../img/Ilustrativa4.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+#Seccion-Base-Epoc5{
+    background-image: url(../img/BaseRom.webp);
+    background-position: 0 -150px;
+    background-size: cover;
+}
+#Seccion-Base-Epoc6{
+    background-image: url(../img/BaseCont.jpg);
+    background-position: 0 -10px;
+    background-size: cover;
+}
+.contenedor-texto-base{
+    position: absolute;
+    width: 600px;
+    height: 498px;
+    right: 120px; /* Igual que left en bienvenida, pero a la derecha */
+    top: -25px;
+    background: rgba(22, 26, 29, 0.6);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.texto-base{
+    position: relative;
+    color: white;
+    text-align: end; /* Alinea el texto a la derecha */
+    width: 550px;
+    height: 445px;
+    z-index: 1;
+    margin-left: auto;
+}
+.texto-base h1{
+    margin: 20px;
+    font-family: 'Tilt';
+    font-size: 64px;
+    text-align: end;
+}
+.texto-base p{
+    margin: 15px;
+    font-family: 'Syne';
+    font-size: 17px;
+    text-align: end;
+}
+.seccion-filosofos-antigua{
+    position: relative;
+    width: 1351px;
+    height: 2582px;
+
+    background-color: #F5F3F4;
+}
+.contenedor_filoantiguo_uno{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 38px;
+}
+.contenedor_filoantiguo_uno img{
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+
+    object-fit: cover;
+    overflow: hidden;
+}
+.nombre-filosantiguo-uno{
+    position: absolute;
+    width: 255px;
+    height: 45px;
+    background-color: #161A1D;
+    border-radius: 50px;
+    cursor: pointer;
+
+    font-family: 'Syne'; 
+    font-size: 25px;
+    font-weight: normal;
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.nombre-filosantiguo-uno:hover{
+    background: #FFFFFF;
+    color: #161A1D;
+    transform: scale(1);
+}
+.nombre-filosantiguo-uno:active{
+    transform: scale(0.8);
+}
+.titulo-seccion-filosofos-antigua{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 57px 0;
+    background-color: #A4161A;
+    border: none;
+    border-radius: 0px 50px 50px 0px;
+    width: 300px;
+    height: 40px;
+}
+.titulo-seccion-filosofos-antigua h1{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Syne';
+    color: #FFFFFF;
+    font-weight: normal;
+}
+.contenedor-info-filosantiguo-uno{
+    position: absolute;
+    width: 900px;
+    height: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenedor-info-filosantiguo-uno img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+    
+}
+.tarjeta-filosofo-black{
+    position: absolute;
+    width: 600px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#FilosBlack1{
+    left: 0;
+    border-radius: 50px 0px 0px 50px;
+}
+#FilosBlack2{
+    right: 0;
+    border-radius: 0px 50px 50px 0px;
+}
+.tarjeta-filosofo-black h1{
+    margin: 15px 30px 15px 30px;
+    font-size: 32px;
+
+    color: #FFFFFF;
+    font-family: 'Tilt'
+}
+.tarjeta-filosofo-black p{
+    margin: 15px;
+    font-size: 19px;
+    text-align: justify;
+
+    color: #FFFFFF;
+    font-family: 'Syne'
+}
+.contenedor-info-filosantiguo-dos a{
+    width: 245px;
+    height: 45px;
+    background-color: #161A1D;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    font-family: 'Syne'; 
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.contenedor-info-filosantiguo-dos a:hover{
+    background: #FFFFFF;
+    color: #161A1D;
+    transform: scale(1);
+}
+.contenedor-info-filosantiguo-dos a:active{
+    transform: scale(0.8);
+}
+.contenedor-info-filosantiguo-dos p{
+    font-family: 'Syne';
+    text-align: justify;
+    font-size: 20px;
+    color: #161A1D;
+}
+.contenedor-info-filosantiguo-dos{
+    position: absolute;
+    width: 1320px;
+    height: 420px;
+    padding: 15px;
+    background-color: #D3D3D3;
+    border-radius: 30px;
+    left: 50%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%);
+}
+.contenedor-hover {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  z-index: 999;
+}
+
+.filos-disparador {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #444;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.filos-principal-oculto {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  width: 400px;
+  height: 120px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(20px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+.filos-principal-oculto p {
+    font-size: 14px;
+    text-align: right;
+    color: #FFFFFF;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+.contenedor-hover:hover .filos-principal-oculto {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+#contdosinfofilodos{
+    margin-top: 841px;
+}
+#contcuatroinfofilodos{
+    margin-top: 2023px;
+}
+#contunoinfofilouno{
+    margin: 115px 79px 0px 375px ;
+}
+#conttresinfofilouno{
+    margin: 1292px 0px 0px 79px;
+}
+#ContFil1{
+    margin-top: 298px;
+}
+#ContFil2{
+    margin: 1496px 0px 0px 990px;
+}
+#NameFilos1{
+    margin: 595px 60px 0;
+}
+#NameFilos2{
+    margin: 1791px 0px 0px 1030px;
+    width: 295px;
+}
+#TitleAnt1{
+    scroll-margin: 110px;
+}
+#BaseAnt{
+    scroll-margin: 100px;
+}
+#FilosEpoc{
+    scroll-margin: 110px;
+}
+ol{
+    font-family: 'Syne';
+    font-family: 'Syne';
+    text-align: justify;
+    color: #161A1D;
+    padding-left: 30px;
+}
+ol li{
+    font-size: 16px;
+    font-weight: bold;
+}
+strong{
+    font-weight: bold;
+    font-size: 16px;
+}
